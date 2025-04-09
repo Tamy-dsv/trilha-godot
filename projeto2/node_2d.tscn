@@ -16,6 +16,7 @@ color = Color(1, 0.756863, 1, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect"]
+layout_mode = 0
 offset_top = 607.0
 offset_right = 1150.0
 offset_bottom = 647.0
@@ -275,5 +276,5 @@ metadata/_edit_use_anchors_ = true
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(580, 619)
+position = Vector2(575, 625)
 shape = SubResource("RectangleShape2D_wtcfe")
