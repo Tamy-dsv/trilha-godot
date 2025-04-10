@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpbxa8qkonq0o"]
+
+[ext_resource type="PackedScene" uid="uid://ctlc4bep5yre7" path="res://objetos/caixa.tscn" id="1_tcp7x"]
+
+[node name="RigidBody2D" instance=ExtResource("1_tcp7x")]
+
+[node name="ColorRect" parent="CollisionShape2D" index="0"]
+color = Color(0.380392, 0.470588, 1, 1)

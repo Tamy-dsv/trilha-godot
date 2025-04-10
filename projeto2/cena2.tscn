@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbfx7hivcryvy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2eof7"]
+size = Vector2(1146, 38)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2eof7"]
+custom_solver_bias = 0.297
+radius = 72.4707
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 1153.0
+offset_bottom = 651.0
+pivot_offset = Vector2(404, 258)
+color = Color(0.909804, 0.623529, 0.878431, 0.984314)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(332, 84)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(247, 150)
+shape = SubResource("RectangleShape2D_2eof7")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
+offset_left = 576.0
+offset_top = 22.0
+offset_right = 813.0
+offset_bottom = 60.0
+scale = Vector2(-4.85934, -1.13135)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(347, 45)
+rotation = -1.67552
+scale = Vector2(0.596364, 0.671337)
+skew = 0.146608
+shape = SubResource("CircleShape2D_2eof7")
+debug_color = Color(0.0878359, 0.602723, 0.66681, 0.42)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D2"]
+offset_left = -83.8414
+offset_top = -68.52
+offset_right = 90.1586
+offset_bottom = 74.48

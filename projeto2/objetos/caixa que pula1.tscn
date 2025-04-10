@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhyibgbjufylq"]
+
+[ext_resource type="PackedScene" uid="uid://ctlc4bep5yre7" path="res://objetos/caixa.tscn" id="1_bnexn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bnexn"]
+radius = 241.0
+height = 482.0
+
+[node name="RigidBody2D" instance=ExtResource("1_bnexn")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(432, 182)
+shape = SubResource("CapsuleShape2D_bnexn")
+
+[node name="ColorRect" parent="CollisionShape2D" index="0"]
+color = Color(0.742939, 0.375604, 0.691119, 1)
